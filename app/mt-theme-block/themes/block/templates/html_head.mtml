@@ -1,0 +1,30 @@
+<mt:Unless name="canonical_url"><$mt:CanonicalURL setvar="canonical_url"$></mt:Unless>
+<mt:Unless name="page_description"><mt:SetVarBlock name="page_description"><$mt:SiteDescription remove_html="1" encode_html="1"$></mt:SetVarBlock></mt:Unless>
+<mt:Unless name="page_image"><mt:SetVarBlock name="page_image"><$mt:SiteURL encode_html="1"$>images/ogimage.png</mt:SetVarBlock></mt:Unless>
+<mt:IfWebsite><mt:If tag="Favicon"><mt:FaviconAsset><mt:AssetURL setvar="favicon"></mt:FaviconAsset></mt:If></mt:IfWebsite>
+<mt:IfBlog><mt:If tag="ChildSiteFavicon"><mt:ChildSiteFaviconAsset><mt:AssetURL setvar="favicon"></mt:ChildSiteFaviconAsset></mt:If></mt:IfBlog>
+  <head>
+    <meta charset="<$mt:PublishCharset$>">
+    <title><mt:var name="page_title"></title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="<mt:var name="page_description">">
+    <meta name="keywords" content="<mt:IfWebsite><$mt:MetaKeywords$></mt:IfWebsite><mt:IfBlog><$mt:ChildSiteMetaKeywords$></mt:IfBlog>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="<mt:If name="favicon"><mt:var name="favicon"><mt:Else><$mt:SiteURL encode_html="1"$>images/favicon.ico</mt:If>">
+    <link rel="start" href="<$mt:SiteURL encode_html="1"$>">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>">
+    <link rel="canonical" href="<mt:var name="canonical_url">">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="<$mt:SiteLanguage setvar="site_lang"$><mt:If name="site_lang" eq="ja">ja_JP<mt:Else><$mt:Var name="site_lang"$></mt:If>">
+    <meta property="og:title" content="<mt:var name="page_title">">
+    <meta property="og:url" content="<mt:var name="canonical_url">">
+    <meta property="og:description" content="<mt:var name="page_description">">
+    <meta property="og:site_name" content="<$mt:SiteName encode_html="1"$>">
+    <meta property="og:image" content="<mt:var name="page_image">">
+    <!-- Microdata -->
+    <meta itemprop="description" content="<mt:var name="page_description">">
+    <link itemprop="url" href="<mt:var name="canonical_url">">
+    <link itemprop="image" href="<mt:var name="page_image">">
+    <$mt:Include module="header-script"$>
+  </head>

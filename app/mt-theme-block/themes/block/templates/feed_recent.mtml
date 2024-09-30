@@ -1,0 +1,32 @@
+<$mt:HTTPContentType type="application/atom+xml"$><?xml version="1.0" encoding="<$mt:PublishCharset$>"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><$mt:SiteName remove_html="1" encode_html="1"$></title>
+    <link rel="alternate" type="text/html" href="<$mt:SiteURL encode_html="1"$>" />
+    <link rel="self" type="application/atom+xml" href="<$mt:Link template="feed_recent"$>" />
+    <id>tag:<$mt:SiteHost exclude_port="1" encode_html="1"$>,<$mt:TemplateCreatedOn format="%Y-%m-%d"$>:<$mt:SiteRelativeURL encode_html="1"$><$mt:SiteID$></id>
+    <updated><mt:Contents content_type="ニュース" lastn="1"><$mt:ContentModifiedDate utc="1" format="%Y-%m-%dT%H:%M:%SZ"$></mt:Contents></updated>
+    <mt:If tag="SiteDescription"><subtitle><$mt:SiteDescription remove_html="1" encode_html="1"$></subtitle></mt:If>
+    <generator uri="https://www.movabletype.org/"><$mt:ProductName$></generator>
+<mt:Contents content_type="ニュース" lastn="15">
+<entry>
+    <title><$mt:ContentField content_field="ニュース記事タイトル" remove_html="1" encode_html="1"$><mt:ContentFieldValue></mt:ContentField></title>
+    <link rel="alternate" type="text/html" href="<$mt:ContentPermalink encode_html="1"$>" />
+    <id><$mt:ContentPermalink encode_html="1"$></id>
+
+    <published><$mt:ContentDate utc="1" format="%Y-%m-%dT%H:%M:%SZ"$></published>
+    <updated><$mt:ContentModifiedDate utc="1" format="%Y-%m-%dT%H:%M:%SZ"$></updated>
+
+    <summary><mt:ContentField content_field="内容"><mt:ContentFieldValue trim_to="40+..." remove_html="1" encode_xml="1"></mt:ContentField></summary>
+    <author>
+        <name><$mt:ContentAuthorDisplayName encode_html="1"$></name>
+        <mt:If tag="ContentAuthorURL"><uri><$mt:ContentAuthorURL encode_html="1"$></uri></mt:If>
+    </author>
+    <mt:ContentField content_field="カテゴリ">
+        <category term="<$mt:CategoryLabel encode_html="1"$>" />
+    </mt:ContentField>
+    <content type="html" xml:lang="<$mt:SiteLanguage ietf="1"$>" xml:base="<$mt:SiteURL encode_html="1"$>">
+        <mt:ContentField content_field="内容"><mt:ContentFieldValue encode_xml="1"$></mt:ContentField>
+    </content>
+</entry>
+</mt:Contents>
+</feed>

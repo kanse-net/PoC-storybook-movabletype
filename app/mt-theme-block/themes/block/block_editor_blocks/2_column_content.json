@@ -1,0 +1,136 @@
+{
+   "block_display_options" : {
+      "common" : [
+         {
+            "index" : "0",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-text"
+         },
+         {
+            "index" : "1",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "mt-image"
+         },
+         {
+            "index" : "2",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "mt-file"
+         },
+         {
+            "index" : "3",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-html"
+         },
+         {
+            "index" : "4",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "sixapart-oembed"
+         },
+         {
+            "index" : "5",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-horizontalrule"
+         },
+         {
+            "index" : "6",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-table"
+         },
+         {
+            "index" : "7",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-columns"
+         },
+         {
+            "index" : "8",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_medium"
+         },
+         {
+            "index" : "9",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-module_select"
+         },
+         {
+            "index" : "10",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgcolor_content"
+         },
+         {
+            "index" : "11",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgimage_content"
+         },
+         {
+            "index" : "12",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-3_column_content"
+         },
+         {
+            "index" : "13",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-header_shoulder"
+         },
+         {
+            "index" : "14",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-content"
+         },
+         {
+            "index" : "15",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-lineimage"
+         },
+         {
+            "index" : "16",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-link_button"
+         },
+         {
+            "index" : "17",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_large"
+         },
+         {
+            "index" : "18",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-content_in_column"
+         }
+      ]
+   },
+   "can_remove_block" : false,
+   "class_name" : "",
+   "html" : {
+      "context" : {
+         "1" : {
+            "className" : "collumn-2"
+         }
+      },
+      "text" : "<!-- mt-beb t=\"core-columns\" m='1' --><div class=\"mt-be-columns collumn-2\" style=\"display: flex\"><!-- mt-beb t=\"core-column\" --><div class='mt-be-column'><!-- mt-beb t=\"custom-content_in_column\" --><!-- /mt-beb --></div><!-- /mt-beb --><!-- mt-beb t=\"core-column\" --><div class='mt-be-column'><!-- mt-beb t=\"custom-content_in_column\" --><!-- /mt-beb --></div><!-- /mt-beb --></div><!-- /mt-beb -->"
+   },
+   "icon" : "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjEuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuODrOOCpOODpOODvF8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiCgkgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM2NjY2NjY7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDY0LDMySDQ4QzIxLjUsMzIsMCw1My41LDAsODB2MzUyYzAsMjYuNSwyMS41LDQ4LDQ4LDQ4aDQxNmMyNi41LDAsNDgtMjEuNSw0OC00OFY4MAoJQzUxMiw1My41LDQ5MC41LDMyLDQ2NCwzMnogTTIyNCw0MTZINjRWMTYwaDE2MFY0MTZ6IE00NDgsNDE2SDI4OFYxNjBoMTYwVjQxNnoiLz4KPC9zdmc+Cg==",
+   "identifier" : "2_column_content",
+   "label" : "２カラム（コンテンツ）",
+   "preview_header" : "",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}

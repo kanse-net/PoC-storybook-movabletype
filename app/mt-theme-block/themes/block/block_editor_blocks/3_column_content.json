@@ -1,0 +1,136 @@
+{
+   "block_display_options" : {
+      "common" : [
+         {
+            "index" : "0",
+            "panel" : true,
+            "shortcut" : true,
+            "typeId" : "core-text"
+         },
+         {
+            "index" : "1",
+            "panel" : true,
+            "shortcut" : true,
+            "typeId" : "mt-image"
+         },
+         {
+            "index" : "2",
+            "panel" : true,
+            "shortcut" : true,
+            "typeId" : "mt-file"
+         },
+         {
+            "index" : "3",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-html"
+         },
+         {
+            "index" : "4",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "sixapart-oembed"
+         },
+         {
+            "index" : "5",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-horizontalrule"
+         },
+         {
+            "index" : "6",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-table"
+         },
+         {
+            "index" : "7",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-columns"
+         },
+         {
+            "index" : "8",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_large"
+         },
+         {
+            "index" : "9",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_medium"
+         },
+         {
+            "index" : "10",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-link_button"
+         },
+         {
+            "index" : "11",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-module_select"
+         },
+         {
+            "index" : "12",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-header_shoulder"
+         },
+         {
+            "index" : "13",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgcolor_content"
+         },
+         {
+            "index" : "14",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgimage_content"
+         },
+         {
+            "index" : "15",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-content"
+         },
+         {
+            "index" : "16",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-lineimage"
+         },
+         {
+            "index" : "17",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-2_column_content"
+         },
+         {
+            "index" : "18",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-content_in_column"
+         }
+      ]
+   },
+   "can_remove_block" : false,
+   "class_name" : "",
+   "html" : {
+      "context" : {
+         "1" : {
+            "className" : "collumn-3"
+         }
+      },
+      "text" : "<!-- mt-beb t=\"core-columns\" m='1' --><div class=\"mt-be-columns collumn-3\" style=\"display: flex\"><!-- mt-beb t=\"core-column\" --><div class='mt-be-column'><!-- mt-beb t=\"custom-content_in_column\" --><!-- /mt-beb --></div><!-- /mt-beb --><!-- mt-beb t=\"core-column\" --><div class='mt-be-column'><!-- mt-beb t=\"custom-content_in_column\" --><!-- /mt-beb --></div><!-- /mt-beb --><!-- mt-beb t=\"core-column\" --><div class='mt-be-column'><!-- mt-beb t=\"custom-content_in_column\" --><!-- /mt-beb --></div><!-- /mt-beb --></div><!-- /mt-beb -->"
+   },
+   "icon" : "data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNjY2O308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00NjQsMzJINDhBNDgsNDgsMCwwLDAsMCw4MFY0MzJhNDgsNDgsMCwwLDAsNDgsNDhINDY0YTQ4LDQ4LDAsMCwwLDQ4LTQ4VjgwQTQ4LDQ4LDAsMCwwLDQ2NCwzMlpNMjk5LjgzLDE2MFY0MTZIMjEyLjY2VjE2MFpNNjQsMTYwaDg2LjY2VjQxNkg2NFpNNDQ4LDQxNkgzNjEuODNWMTYwSDQ0OFoiLz48L3N2Zz4=",
+   "identifier" : "3_column_content",
+   "label" : "３カラム（コンテンツ）",
+   "preview_header" : "",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}

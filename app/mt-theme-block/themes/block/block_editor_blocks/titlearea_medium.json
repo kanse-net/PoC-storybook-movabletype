@@ -1,0 +1,145 @@
+{
+   "block_display_options" : {
+      "common" : [
+         {
+            "index" : "0",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-text"
+         },
+         {
+            "index" : "1",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "mt-image"
+         },
+         {
+            "index" : "2",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "mt-file"
+         },
+         {
+            "index" : "3",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-html"
+         },
+         {
+            "index" : "4",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "sixapart-oembed"
+         },
+         {
+            "index" : "5",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-horizontalrule"
+         },
+         {
+            "index" : "6",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-table"
+         },
+         {
+            "index" : "7",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-columns"
+         },
+         {
+            "index" : "8",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_large"
+         },
+         {
+            "index" : "9",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-link_button"
+         },
+         {
+            "index" : "10",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-header_shoulder"
+         },
+         {
+            "index" : "11",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgcolor_content"
+         },
+         {
+            "index" : "12",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgimage_content"
+         },
+         {
+            "index" : "13",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-content"
+         },
+         {
+            "index" : "14",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-module_select"
+         },
+         {
+            "index" : "15",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-2_column_content"
+         },
+         {
+            "index" : "16",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-3_column_content"
+         },
+         {
+            "index" : "17",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-lineimage"
+         },
+         {
+            "index" : "18",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-content_in_column"
+         }
+      ]
+   },
+   "can_remove_block" : true,
+   "class_name" : "",
+   "html" : {
+      "context" : {
+         "1" : {
+            "className" : "image",
+            "label" : "背景画像"
+         },
+         "2" : {
+            "alignment" : "",
+            "assetId" : "",
+            "useThumbnail" : false
+         },
+         "3" : {
+            "label" : "タイトル"
+         }
+      },
+      "text" : "<!-- mt-beb t=\"mt-image\" m='1,2' --><p class=\"image\"><img src=\"\" alt=\"\" width=\"\" height=\"\" class=\"asset asset-image\" style=\"max-width:100%;height:auto;display:block\"/></p><!-- /mt-beb --><!-- mt-beb m='3' --><h1>タイトル</h1><!-- /mt-beb -->"
+   },
+   "icon" : "data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNjY2O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48cmVjdCBjbGFzcz0iY2xzLTEiIHk9IjExOCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSIyODAiIHJ4PSI0OC4zNSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI3Mi4yNSwzMjFIMjA3LjExdi05cTgsMCwxMi4xMS0xLjc2dDUuMjctNS4wOGEyNywyNywwLDAsMCwxLjE3LTguNzhWMjU2LjU5SDE2NC4yNHYzOS43NWMwLDUuNDYsMS4xNCw5LjQ0LDMuNDIsMTEuOTFzNy40OCwzLjcxLDE1LjYyLDMuNzF2OUgxMTcuNjZ2LTlxNy45MSwwLDEyLjA2LTEuNzZjMi43Ni0xLjE3LDQuNTUtMi44NCw1LjM3LTVhMjYsMjYsMCwwLDAsMS4yMi04LjgzVjIxMy4xM2EyNi4xMiwyNi4xMiwwLDAsMC0xLjE3LTguNzQsOS4yNyw5LjI3LDAsMCwwLTUuMTgtNXEtNC0xLjg1LTEyLjMtMS44NXYtOWg2NS42MnY5cS0xMi4xLDAtMTUuNTcsMy42MXQtMy40NywxMnYzMi42Mmg2MS40MlYyMTMuMTNhMjguMTgsMjguMTgsMCwwLDAtMS4wNy04Ljc0cS0xLjA4LTMuMTYtNS4wOC01dC0xMi40LTEuODV2LTloNjUuMTR2OXEtOC4zMSwwLTEyLjMxLDEuODV0LTUuMTMsNWEyNy4zOSwyNy4zOSwwLDAsMC0xLjEyLDguNzR2ODMuMjFhMjguNCwyOC40LDAsMCwwLDEsOC41NHExLDMuMTgsNS4xMiw1LjEzVDI3Mi4yNSwzMTJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzgwLjUsMzIzSDMxNy45NFYzMTMuMmg0Ljc3YzQuMjcsMCw3LjMzLS40OSw5LjItMS40OGE2LjM0LDYuMzQsMCwwLDAsMy40NS00LjE2QTM5Ljc2LDM5Ljc2LDAsMCwwLDMzNiwyOTlWMjIwYTI3LjA2LDI3LjA2LDAsMCwwLTEuMDctOC44NCw2LjY0LDYuNjQsMCwwLDAtNC40Ny00cS0zLjQxLTEuMTEtMTAuOTEtMS4xMUgzMTZWMTk2LjdxMTcuMjYtMi4zMiwyNC4yOC00LjM2YTQzLDQzLDAsMCwwLDEyLjc5LTYuMWg5LjU1VjMwMC41cTAsNy4xMSwyLjQ0LDkuOXQ5LjY0LDIuOGg1Ljc5WiIvPjwvc3ZnPg==",
+   "identifier" : "titlearea_medium",
+   "label" : "タイトルエリア中",
+   "preview_header" : "<script>\r\ndocument.addEventListener(\"DOMContentLoaded\", async () => {\r\n  if (document.body.dataset.hasCompiledHtml) {\r\n    // 処理済み\r\n    return;\r\n  }\r\n\r\n  const imgContainerElm = document.querySelector(\".image\");\r\n  const imgElm = imgContainerElm.querySelector(\"img\");\r\n  imgContainerElm.remove();\r\n\r\n  const img = imgElm ? imgElm.src : \"\";\r\n  const text = document.body.innerHTML;  \r\n\r\n  MTBlockEditorSetCompiledHtml(`\r\n    <div class=\"medium-area\" style=\"background-image: url(${img})\">\r\n      <div class=\"inner-wrap\">\r\n          ${text}\r\n      </div>\r\n    </div>\r\n  `);\r\n});\r\n</script>",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}

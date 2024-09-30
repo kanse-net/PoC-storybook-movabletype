@@ -1,0 +1,32 @@
+<mt:SetVarBlock name="page_title"><$mt:CategoryLabel encode_html="1"$>のニュース一覧 | <$mt:SiteName encode_html="1"$></mt:SetVarBlock>
+<mt:IfWebsite><mt:If tag="Ogp"><mt:OgpAsset><mt:AssetURL setvar="page_image"></mt:OgpAsset></mt:If></mt:IfWebsite>
+<mt:IfBlog><mt:If tag="ChildSiteOgp"><mt:ChildSiteOgpAsset><mt:AssetURL setvar="page_image"></mt:ChildSiteOgpAsset></mt:If></mt:IfBlog>
+<!DOCTYPE html>
+<html lang="<$mt:SiteLanguage$>" itemscope itemtype="http://schema.org/WebPage">
+  <mt:Include module="HTMLヘッダー">
+  <body>
+    <$mt:Include module="main-header"$>
+    <main class="content_data">
+      <div class="news__medium-area">
+      <div class="inner-wrap">
+        <h1>ニュース</h1>
+      </div>
+    </div>
+    <$mt:Include module="news-header"$>
+    <$mt:Include module="news-list"$>
+    </main>
+  <div class="breadcrumb-block">
+    <div class="inner-wrap">
+      <nav>
+        <ul class="breadcrumb__list">
+          <li><a href="<$mt:SiteRelativeURL$>"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li><a href="<$mt:SiteRelativeURL$>news.html">ニュース</a></li>
+          <li><$mt:CategoryLabel encode_html="1"$></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <$mt:Include module="footer"$>
+  <$mt:Include module="footer-script"$>
+  </body>
+</html>

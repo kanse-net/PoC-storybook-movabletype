@@ -1,0 +1,447 @@
+id: block
+label: Block
+name: Block
+version: "1.0"
+author_link: https://www.movabletype.org/
+author_name: Six Apart Ltd.
+class: both
+description: ブロックエディタを活用し、トップページも含む全てのページをコンテンツタイプで作成できるテーマです。
+protected: 1
+required_components:
+  core: 7.0
+  commercial: 2.0
+  MTBlockEditor: 1.2
+l10n_lexicon:
+  en_us: l10n_en_us.yaml
+  ja: l10n_ja.yaml
+thumbnail_file: "thumb.png"
+thumbnail_file_medium: "thumb-medium.png"
+thumbnail_file_small: "thumb-small.png"
+elements:
+  default_prefs:
+    component: "core"
+    importer: "default_prefs"
+    data:
+      allow_pings: 0
+      allow_pings_default: 0
+      content_css: "css/style.css"
+  blog_static_files:
+    component: ~
+    data:
+      - images
+    importer: blog_static_files
+  be_block:
+    component: MTBlockEditor
+    data:
+      bgcolor_content: {}
+      bgimage_content: {}
+      module_select: {}
+      content_in_column: {}
+      content: {}
+      2_column_content: {}
+      3_column_content: {}
+      header_shoulder: {}
+      lineimage: {}
+      link_button: {}
+      titlearea_large: {}
+      titlearea_medium: {}
+    importer: be_block
+  be_config:
+    component: MTBlockEditor
+    data:
+      news: {}
+      webpage: {}
+      toppage: {}
+    importer: be_config
+  custom_fields:
+    component: commercial
+    data:
+      copyright:
+        default: ""
+        description: フッター下に表示されるコピーライトの文言を設定します。
+        name: コピーライトの文言
+        obj_type: website
+        options: ~
+        required: 0
+        tag: Copyright
+        type: text
+      favicon:
+        default: ""
+        description: faviconを設定します。（○○○.ico形式の画像を設定してください。）
+        name: favicon
+        obj_type: website
+        options: ~
+        required: 0
+        tag: Favicon
+        type: image
+      footerlogo:
+        default: ""
+        description: フッターに表示する画像をアップロードします。
+        name: フッターロゴ画像
+        obj_type: website
+        options: ~
+        required: 0
+        tag: FooterLogo
+        type: image
+      headerlogo:
+        default: ""
+        description: ヘッダーに表示する画像をアップロードします。
+        name: ヘッダーロゴ画像
+        obj_type: website
+        options: ~
+        required: 0
+        tag: HeaderLogo
+        type: image
+      metakeywords:
+        default: ""
+        description: 全ページ共通のmeta keywordsを指定します。
+        name: メタキーワード
+        obj_type: website
+        options: ~
+        required: 0
+        tag: MetaKeywords
+        type: text
+      newsnum:
+        default: ""
+        description: ニュース一覧（news.html）で表示されるニュース記事の最大件数を設定します。３の倍数がオススメです。
+        name: ニュース一覧に表示する件数
+        obj_type: website
+        options: ~
+        required: 0
+        tag: NewsNum
+        type: text
+      ogp:
+        default: ""
+        description: " ogpイメージに設定する画像をアップロードします。"
+        name: ogpイメージ
+        obj_type: website
+        options: ~
+        required: 0
+        tag: Ogp
+        type: image
+      child_copyright:
+        default: ""
+        description: フッター下に表示されるコピーライトの文言を設定します。
+        name: コピーライトの文言
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: ChildSiteCopyright
+        type: text
+      child_favicon:
+        default: ""
+        description: faviconを設定します。（○○○.ico形式の画像を設定してください。）
+        name: favicon
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: ChildSiteFavicon
+        type: image
+      child_footerlogo:
+        default: ""
+        description: フッターに表示する画像をアップロードします。
+        name: フッターロゴ画像
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: ChildSiteFooterLogo
+        type: image
+      child_headerlogo:
+        default: ""
+        description: ヘッダーに表示する画像をアップロードします。
+        name: ヘッダーロゴ画像
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: ChildSiteHeaderLogo
+        type: image
+      child_metakeywords:
+        default: ""
+        description: 全ページ共通のmeta keywordsを指定します。
+        name: メタキーワード
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: ChildSiteMetaKeywords
+        type: text
+      child_newsnum:
+        default: ""
+        description: ニュース一覧（news.html）で表示されるニュース記事の最大件数を設定します。３の倍数がオススメです。
+        name: ニュース一覧に表示する件数
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: ChildSiteNewsNum
+        type: text
+      child_ogp:
+        default: ""
+        description: " ogpイメージに設定する画像をアップロードします。"
+        name: ogpイメージ
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: ChildSiteOgp
+        type: image
+    importer: custom_fields
+  default_category_sets:
+    component: ~
+    data:
+      ニュース用カテゴリ:
+        categories:
+          ":order":
+            - event
+            - info
+            - product
+          event:
+            label: イベント
+          info:
+            label: お知らせ
+          product:
+            label: 製品・サービス情報
+        name: ニュース用カテゴリ
+    importer: default_category_sets
+  default_content_data:
+    component: ~
+    data:
+      トップページ:
+        index.html:
+          identifier: index.html
+          label: トップページ
+          status: 2
+          data:
+    importer: default_content_data
+  default_content_types:
+    component: ~
+    data:
+      - description: ""
+        fields:
+          - data_label: 1
+            description: ""
+            display: none
+            initial_value: ""
+            label: ニュース記事タイトル
+            max_length: 255
+            min_length: 0
+            order: 1
+            required: 1
+            type: single_line_text
+          - be_config: ニュース
+            description: ""
+            display: force
+            full_rich_text: 1
+            initial_value: ""
+            input_format: block_editor
+            label: 内容
+            order: 2
+            required: 0
+            type: multi_line_text
+          - can_add: 1
+            category_set: ニュース用カテゴリ
+            description: ""
+            display: force
+            label: カテゴリ
+            max: 3
+            min: 0
+            multiple: 1
+            order: 3
+            required: 0
+            type: categories
+          - allow_upload: 1
+            description: ogpイメージに設定する画像をアップロードします。
+            display: none
+            label: ogpイメージ
+            max: ""
+            min: ""
+            multiple: 0
+            order: 4
+            required: 0
+            type: asset_image
+        name: ニュース
+        user_disp_option: 0
+      - description: ""
+        fields:
+          - data_label: 1
+            description: ""
+            display: default
+            initial_value: ""
+            label: ページタイトル
+            max_length: 255
+            min_length: 0
+            order: 1
+            required: 1
+            type: single_line_text
+          - be_config: ウェブページ
+            description: ウェブページの内容を入力します。ブロックエディタから、画面全体をつかったページレイアウトが可能です。
+            display: default
+            full_rich_text: 1
+            initial_value: ""
+            input_format: block_editor
+            label: 内容
+            order: 2
+            required: 0
+            type: multi_line_text
+          - description: このページへのリンクを表示する位置を指定します。 表示しない：ナビには表示しません。 ヘッダー・フッター：ヘッダーのグローバルナビとフッターのナビに表示します。 フッター下：フッターの下に小さく表示します（新窓）。プライバシーポリシーページなどにおすすめです。
+            display: none
+            label: ナビの表示位置
+            order: 3
+            required: 1
+            type: radio_button
+            values:
+              - checked: checked
+                label: 表示しない
+                value: none
+              - checked: ""
+                label: ヘッダー・フッター
+                value: hf
+              - checked: ""
+                label: フッター下
+                value: footer
+          - description: 「【ページ用モジュール】ウェブページ一覧」モジュールの内容に、このウェブページへのリンクが表示されます。 インデックスページを作る際などに活用できます。
+            display: default
+            label: 「【ページ用モジュール】ウェブページ一覧」モジュールに追加
+            max: ""
+            min: ""
+            multiple: 1
+            order: 4
+            required: 0
+            type: checkboxes
+            values:
+              - checked: ""
+                label: 追加
+                value: add_module
+          - allow_upload: 1
+            description: ogpイメージに設定する画像をアップロードします。
+            display: none
+            label: ogpイメージ
+            max: ""
+            min: ""
+            multiple: 0
+            order: 5
+            preview_height: 80
+            preview_width: 80
+            required: 0
+            type: asset_image
+        name: ウェブページ
+        user_disp_option: 1
+      - description: ""
+        fields:
+          - be_config: トップページ
+            description: トップページの内容を入力します。ブロックエディタから、画面全体をつかったページレイアウトが可能です。
+            display: default
+            full_rich_text: 1
+            initial_value: ""
+            input_format: block_editor
+            label: 内容
+            order: 2
+            required: 0
+            type: multi_line_text
+        name: トップページ
+        user_disp_option: 1
+    importer: default_content_types
+  default_folders:
+    component: ~
+    data:
+      ":order":
+        - about
+      about:
+        label: about
+    importer: default_folders
+  template_set:
+    component: ~
+    data:
+      base_path: templates
+      label: exported_template set
+      templates:
+        ct:
+          news:
+            content_type: ニュース
+            label: ニュース
+            mappings:
+              contenttype:
+                archive_type: ContentType
+                category_field: カテゴリ
+                file_template: "%y/%m/%d/%f"
+                preferred: 1
+          webpage:
+            content_type: ウェブページ
+            label: ウェブページ
+            mappings:
+              contenttype:
+                archive_type: ContentType
+                file_template: "%f"
+                preferred: 1
+        ct_archive:
+          news_category:
+            content_type: ニュース
+            label: カテゴリ別ニュース記事リスト
+            mappings:
+              contenttype-category:
+                archive_type: ContentType-Category
+                category_field: カテゴリ
+                file_template: "%-c/%i"
+                preferred: 1
+          news_yearly:
+            content_type: ニュース
+            label: 年別ニュース記事リスト
+            mappings:
+              contenttype-yearly:
+                archive_type: ContentType-Yearly
+                category_field: カテゴリ
+                file_template: "%y/%i"
+                preferred: 1
+        index:
+          feed_recent:
+            label: ニュースフィード
+            outfile: atom.xml
+            rebuild_me: 1
+          main_index:
+            label: トップページ
+            outfile: index.html
+            rebuild_me: 1
+          news_index:
+            label: ニューストップ
+            outfile: news.html
+            rebuild_me: 1
+          styles:
+            label: スタイルシート
+            outfile: css/style.css
+            rebuild_me: 1
+        module:
+          footer:
+            label: footer
+          header-script:
+            label: header-script
+          main-header:
+            label: main-header
+          footer-script:
+            label: footer-script
+          news-list:
+            label: news-list
+          html_head:
+            label: HTMLヘッダー
+          news-header:
+            label: news-header
+          webpage-list:
+            label: 【ページ用モジュール】ウェブページ一覧
+          latest-news:
+            label: 【ページ用モジュール】最新ニュース3件
+          news-pagination:
+            label: news-pagination
+          social-buttons:
+            label: social-buttons
+        system:
+          cd_search_results:
+            label: コンテンツの検索結果
+          comment_listing:
+            label: コメント一覧
+          comment_preview:
+            label: コメントプレビュー
+          comment_response:
+            label: コメント完了
+          dynamic_error:
+            label: ダイナミックパブリッシングエラー
+          popup_image:
+            label: ポップアップ画像
+          search_results:
+            label: 検索結果
+    importer: template_set

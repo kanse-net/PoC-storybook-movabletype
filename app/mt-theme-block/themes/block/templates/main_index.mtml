@@ -1,0 +1,44 @@
+<mt:SetVarBlock name="page_title"><$mt:SiteName encode_html="1"$></mt:SetVarBlock>
+<mt:IfWebsite><mt:If tag="Ogp"><mt:OgpAsset><mt:AssetURL setvar="page_image"></mt:OgpAsset></mt:If></mt:IfWebsite>
+<mt:IfBlog><mt:If tag="ChildSiteOgp"><mt:ChildSiteOgpAsset><mt:AssetURL setvar="page_image"></mt:ChildSiteOgpAsset></mt:If></mt:IfBlog>
+<!DOCTYPE html>
+<html lang="<$mt:SiteLanguage$>" itemscope itemtype="http://schema.org/WebPage">
+  <mt:Include module="HTMLヘッダー">
+  <body>
+    <$mt:Include module="main-header"$>
+    <main class="content_data">
+<mt:Contents content_type="トップページ" limit="1">
+<mt:ContentField content_field="内容">
+<mt:If tag="ContentFieldValue" convert_breaks="0" like="^.!-- mt-beb">
+<$mt:SetVar name="is_mt_block_editor" value="1"$>
+</mt:If>
+</mt:ContentField>
+
+<mt:If name="is_mt_block_editor">
+
+<mt:ContentField content_field="内容">
+<mt:BlockEditorBlocks tag="ContentFieldValue">
+<mt:If name="type" eq="custom-module_select">
+<mt:Include module="$__value__">
+<mt:Else>
+<mt:Var name="__value__">
+</mt:If>
+</mt:BlockEditorBlocks>
+</mt:ContentField>
+
+<mt:Else>
+      <div class="webpage__medium-area bg-color-dark">
+        <div class="inner-wrap">
+          <h1><mt:SiteName escape="html"></h1>
+        </div>
+      </div>
+      <div class="inner-wrap">
+      <mt:ContentField content_field="内容"><mt:ContentFieldValue></mt:ContentField>
+      </div>
+</mt:If>
+</mt:Contents>
+    </main>
+  <$mt:Include module="footer"$>
+  <$mt:Include module="footer-script"$>
+  </body>
+</html>

@@ -1,5 +1,11 @@
 # PoC-storybook-movabletype
 
+## mt-theme-block
+
+https://github.com/movabletype/mt-theme-block
+
+MIT ライセンスに基づき `mt-theme-block` を利用しています。
+
 ## Docker コマンド
 
 ### コンテナに入る

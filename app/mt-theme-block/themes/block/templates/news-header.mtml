@@ -1,0 +1,34 @@
+<div class="news__navi-wrap">
+      <ul class="news__navi">
+        <li class="news__navi--all"><a href="<$mt:SiteRelativeURL$>news.html">全て</a></li>
+        <li>
+          <div class="pulldownWrap">
+            <div id="menu-yearly" class="pulldown__header">年別</div>
+              <mt:ArchiveList type="ContentType-Yearly" content_type="ニュース">
+                <mt:ArchiveListHeader>
+                <ul class="news__subnavi pulldown__list" style="display: none;">
+                </mt:ArchiveListHeader>
+                  <li><a href="<$mt:ArchiveLink encode_html="1"$>"><$mt:ArchiveTitle$></a></li>
+                <mt:ArchiveListFooter>
+                </ul>
+                </mt:ArchiveListFooter>
+              </mt:ArchiveList>          
+            </div>
+        </li>
+        <li>
+			<mt:CategorySets content_type="ニュース" name="ニュース用カテゴリ">
+			  <mt:TopLevelCategories>
+			    <mt:SubCatIsFirst><ul class="news__subnavi"></mt:SubCatIsFirst>
+			  <mt:If tag="CategoryCount">
+			    <li>
+			    <a href="<mt:ArchiveLink content_type="ニュース" archive_type="ContentType-Category">"><$mt:CategoryLabel encode_html="1"$></a>
+			    </li>
+                <mt:Else>
+			    <li><span class="nolink"><$mt:CategoryLabel encode_html="1"$></span></li>
+			  </mt:If>
+			    <mt:SubCatIsLast></ul></mt:SubCatIsLast>
+			  </mt:TopLevelCategories>
+			</mt:CategorySets>
+        </li>
+      </ul>
+    </div>

@@ -1,0 +1,136 @@
+{
+   "block_display_options" : {
+      "common" : [
+         {
+            "index" : "0",
+            "panel" : true,
+            "shortcut" : true,
+            "typeId" : "core-text"
+         },
+         {
+            "index" : "1",
+            "panel" : true,
+            "shortcut" : true,
+            "typeId" : "mt-image"
+         },
+         {
+            "index" : "2",
+            "panel" : true,
+            "shortcut" : true,
+            "typeId" : "mt-file"
+         },
+         {
+            "index" : "3",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-html"
+         },
+         {
+            "index" : "4",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "sixapart-oembed"
+         },
+         {
+            "index" : "5",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-horizontalrule"
+         },
+         {
+            "index" : "6",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-table"
+         },
+         {
+            "index" : "7",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-columns"
+         },
+         {
+            "index" : "8",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_medium"
+         },
+         {
+            "index" : "9",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-bgcolor_content"
+         },
+         {
+            "index" : "10",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-2_column_content"
+         },
+         {
+            "index" : "11",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-3_column_content"
+         },
+         {
+            "index" : "12",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-header_shoulder"
+         },
+         {
+            "index" : "13",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-content"
+         },
+         {
+            "index" : "14",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-lineimage"
+         },
+         {
+            "index" : "15",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-link_button"
+         },
+         {
+            "index" : "16",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_large"
+         },
+         {
+            "index" : "17",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-bgimage_content"
+         }
+      ]
+   },
+   "can_remove_block" : false,
+   "class_name" : "",
+   "html" : {
+      "context" : {
+         "1" : {
+            "blockElement" : "",
+            "helpText" : "挿入するページ用モジュールを選択します。",
+            "label" : "ページ用モジュールを選択",
+            "options" : "【ページ用モジュール】ウェブページ一覧\n【ページ用モジュール】最新ニュース3件"
+         },
+         "2" : {
+            "text" : "【ページ用モジュール】ウェブページ一覧"
+         }
+      },
+      "text" : "<!-- mt-beb t=\"sixapart-select\" m='1,2' -->【ページ用モジュール】ウェブページ一覧<!-- /mt-beb -->"
+   },
+   "icon" : "data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNjY2O308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00MTguOCwxMjQuODcsMjY0LjA1LDY5Ljc0YTI0LDI0LDAsMCwwLTE2LjEsMEw5My4yLDEyNC44N2EyNCwyNCwwLDAsMC0xNiwyMi42MXYyMTdhMjQsMjQsMCwwLDAsMTYsMjIuNjFMMjQ4LDQ0Mi4yNmEyNCwyNCwwLDAsMCwxNi4xLDBMNDE4LjgsMzg3LjEzYTI0LDI0LDAsMCwwLDE1Ljk1LTIyLjYxdi0yMTdBMjQsMjQsMCwwLDAsNDE4LjgsMTI0Ljg3Wm0tMTYyLjgtNywxMDEuMTEsMzZMMjU2LDE4OS44OGwtMTAxLjExLTM2Wk0xMjUuMjUsMTY4Ljc3LDI0NCwyMTEuMDhWMzg5LjlMMTI1LjI1LDM0Ny41OVpNMjY4LDM4OS45VjIxMS4wOGwxMTguNzUtNDIuMzFWMzQ3LjU5WiIvPjwvc3ZnPg==",
+   "identifier" : "module_select",
+   "label" : "モジュール選択",
+   "preview_header" : "",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}

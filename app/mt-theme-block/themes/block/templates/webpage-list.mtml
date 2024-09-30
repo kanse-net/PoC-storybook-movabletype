@@ -1,0 +1,12 @@
+<mt:Contents content_type="ウェブページ" limit="999">
+<mt:ContentField content_field="「【ページ用モジュール】ウェブページ一覧」モジュールに追加"><mt:If tag="ContentFieldValue" eq="add_module">
+<section class="webpagelist__wrap bg-color-light">
+  <div class="inner-wrap">
+    <h2><mt:ContentField content_field="ページタイトル"><mt:ContentFieldValue></mt:ContentField></h2>
+    <p><mt:ContentField content_field="内容"><mt:ContentFieldValue language="ja" convert_breaks="1" words="300"></mt:ContentField>
+      <a href="<mt:ContentPermalink>" class="button">詳しく見る</a>
+    </p>
+  </div>
+</section>
+</mt:If></mt:ContentField>
+</mt:Contents>

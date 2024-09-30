@@ -1,0 +1,42 @@
+<mt:SetVarBlock name="page_title">ニュース | <$mt:SiteName encode_html="1"$></mt:SetVarBlock>
+<mt:IfWebsite><mt:If tag="Ogp"><mt:OgpAsset><mt:AssetURL setvar="page_image"></mt:OgpAsset></mt:If></mt:IfWebsite>
+<mt:IfBlog><mt:If tag="ChildSiteOgp"><mt:ChildSiteOgpAsset><mt:AssetURL setvar="page_image"></mt:ChildSiteOgpAsset></mt:If></mt:IfBlog>
+<mt:SetVarBlock name="config_newsNum"><mt:NewsNum></mt:SetVarBlock>
+<mt:IfWebsite><mt:NewsNum setvar="config_newsNum"></mt:IfWebsite>
+<mt:IfBlog><mt:ChildSiteNewsNum setvar="config_newsNum"></mt:IfBlog>
+<mt:SetVarBlock name="search_link">
+    <$mt:CGIPath$><$mt:SearchScript$>?IncludeSites=<$mt:SiteID$>
+    &template_id=<$mt:BuildTemplateID$>
+    &limit=<$mt:Var name="config_newsNum"$>
+    &archive_type=Index
+    &page=
+</mt:SetVarBlock>
+<$mt:Var name="search_link" strip="" trim="1" encode_html="1" setvar="search_link"$>
+<!DOCTYPE html>
+<html lang="<$mt:SiteLanguage$>" itemscope itemtype="http://schema.org/WebPage">
+  <mt:Include module="HTMLヘッダー">
+  <body>
+    <$mt:Include module="main-header"$>
+    <main class="content_data">
+      <div class="news__medium-area">
+      <div class="inner-wrap">
+        <h1>ニュース</h1>
+      </div>
+    </div>
+    <$mt:Include module="news-header"$>   
+    <$mt:Include module="news-list"$>
+    </main>
+  <div class="breadcrumb-block">
+    <div class="inner-wrap">
+      <nav>
+        <ul class="breadcrumb__list">
+          <li><a href="<$mt:SiteRelativeURL$>"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li><a href="<$mt:SiteRelativeURL$>news.html">ニュース</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <$mt:Include module="footer"$>
+  <$mt:Include module="footer-script"$>
+  </body>
+</html>

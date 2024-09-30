@@ -1,0 +1,44 @@
+<mt:SetVarBlock name="canonical_url"><mt:ContentPermalink></mt:SetVarBlock>
+<mt:SetVarBlock name="page_title"><mt:ContentField content_field="ニュース記事タイトル"><mt:ContentFieldValue></mt:ContentField> | <$mt:SiteName encode_html="1"$></mt:SetVarBlock>
+<mt:SetVarBlock name="page_description"><mt:ContentField content_field="内容"><mt:ContentFieldValue trim_to="40+..." remove_html="1"></mt:ContentField></mt:SetVarBlock>
+<mt:SetVarBlock name="page_image"><mt:SetVarBlock name="news_ogp"><mt:ContentField content_field="ogpイメージ"><mt:ContentFieldValue></mt:ContentField></mt:SetVarBlock><mt:If name="news_ogp"><mt:ContentField content_field="ogpイメージ"><mt:AssetURL></mt:ContentField></mt:If></mt:SetVarBlock>
+<!DOCTYPE html>
+<html lang="<$mt:SiteLanguage$>" itemscope itemtype="http://schema.org/WebPage">
+  <mt:Include module="HTMLヘッダー">
+  <body>
+    <$mt:Include module="main-header"$>
+    <main class="content_data">
+    <div class="news__medium-area">
+      <div class="inner-wrap">
+        <h1>ニュース</h1>
+      </div>
+    </div>
+    <$mt:Include module="news-header"$>
+    <section class="section-bgwhite">
+    <div class="inner-wrap">
+      <h2><mt:ContentField content_field="ニュース記事タイトル"><mt:ContentFieldValue></mt:ContentField></h2>
+      <div class="entrydata__wrap">
+        <p class="entrydata__date"><$mt:ContentDate format="%Y.%m.%d"$></p>
+        <p class="entrydata__genre"><mt:ContentField content_field="カテゴリ"　glue="，"><$mt:CategoryLabel encode_html="1"$></mt:ContentField></p>
+      </div>
+      <mt:ContentField content_field="内容"><mt:ContentFieldValue></mt:ContentField>
+      <$mt:Include module="social-buttons"$>
+      <div class="block-news__allWrap"><a href="<$mt:SiteURL encode_html="1"$>news.html" class="block-news__all">ニュース一覧に戻る</a></div>
+    </div>
+    </section>
+	    </main>
+  <div class="breadcrumb-block">
+    <div class="inner-wrap">
+      <nav>
+        <ul class="breadcrumb__list">
+          <li><a href="<$mt:SiteRelativeURL$>"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li><a href="<$mt:SiteRelativeURL$>news.html">ニュース</a></li>
+          <li><mt:ContentField content_field="ニュース記事タイトル"><mt:ContentFieldValue></mt:ContentField></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <$mt:Include module="footer"$>
+  <$mt:Include module="footer-script"$>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+   "block_display_options" : {
+      "common" : []
+   },
+   "can_remove_block" : false,
+   "class_name" : "",
+   "html" : {
+      "context" : {
+         "1" : {
+            "helpText" : "「リンクの挿入・編集」からリンクテキスト、リンク先URLを変更します。",
+            "label" : "リンクボタン"
+         }
+      },
+      "text" : "<!-- mt-beb m='1' --><p><a class=\"button\" href=\"リンク先URL\">リンク先URL</a></p><!-- /mt-beb -->"
+   },
+   "icon" : "data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNjY2O30uY2xzLTJ7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS13aWR0aDozMnB4O308L3N0eWxlPjwvZGVmcz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjU2IiB5PSI1NiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIHJ4PSI1MS4wOCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMyMS4zOCwyNzYuMTJsMzUuODQtMzEuNzFjMjMuNzEtMjEsMjMuNzEtNTUsMC03NS45NWgwYy0yMy43MS0yMS02Mi4xNS0yMS04NS44NiwwbC0zNS44NCwzMS43MSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE5MC42MiwyMzkuODhsLTM1Ljg0LDMxLjcxYy0yMy43MSwyMS0yMy43MSw1NSwwLDc2aDBjMjMuNzEsMjEsNjIuMTUsMjEsODUuODYsMGwzNS44NC0zMS43MSIvPjxsaW5lIGNsYXNzPSJjbHMtMiIgeDE9IjI4My4xOCIgeTE9IjIzMy45NiIgeDI9IjIyOC44MiIgeTI9IjI4Mi4wNCIvPjwvc3ZnPg==",
+   "identifier" : "link_button",
+   "label" : "リンクボタン",
+   "preview_header" : "",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}

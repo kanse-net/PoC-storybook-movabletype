@@ -1,0 +1,35 @@
+<mt:Contents content_type="ニュース" limit="3">
+<mt:ContentsHeader>
+<section class="section-bgwhite bg-color-light">
+  <div class="inner-wrap">
+  <mt:If tag="CategoryLabel">
+    <h2><$mt:CategoryLabel encode_html="1"$></h2>
+  </mt:If>
+  <mt:IfArchiveType content_type="ニュース" archive_type="ContentType-Yearly">
+    <h2><mt:ArchiveDate format="%Y年" language="ja"></h2>
+  </mt:IfArchiveType>
+      <ul class="block-news">
+    </mt:ContentsHeader>
+        <li class="mt-be-column">
+          <div class="block-newsItem">
+            <div class="block-news__dateWrap">
+              <p class="block-news__date"><time datetime="<$mt:ContentDate format="%Y-%m-%d"$>"><$mt:ContentDate format="%Y.%m.%d"$></time></p>
+              <p class="block-news__category"><mt:ContentField content_field="カテゴリ"　glue="，"><$mt:CategoryLabel encode_html="1"$></mt:ContentField></p>
+            </div>
+            <h2><mt:ContentField content_field="ニュース記事タイトル"><mt:ContentFieldValue language="ja" trim_to="40+..." remove_html="1"></mt:ContentField></h2>
+            <p><mt:ContentField content_field="内容"><mt:ContentFieldValue language="ja" convert_breaks="1" words="150"></mt:ContentField></p>
+            <a href="<mt:ContentPermalink>" class="block-news__button button">
+              記事を全て見る
+            </a>
+          </div>
+        </li>
+    <mt:ContentsFooter>
+    </ul>
+	<mt:SetVarBlock name="newscount"><mt:ContentsCount></mt:SetVarBlock>
+	<mt:if name="newscount" ge="$config_newsNum">
+	<div class="block-news__allWrap"><a href="<$mt:SiteURL encode_html="1"$>news.html" class="block-news__all">全てのニュースを表示</a></div>
+	</mt:if>
+  </div>
+</section>
+    </mt:ContentsFooter>
+    </mt:Contents>

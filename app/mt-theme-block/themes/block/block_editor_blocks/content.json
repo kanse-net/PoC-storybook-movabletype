@@ -1,0 +1,129 @@
+{
+   "block_display_options" : {
+      "common" : [
+         {
+            "index" : "0",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-text"
+         },
+         {
+            "index" : "1",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "mt-image"
+         },
+         {
+            "index" : "2",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "mt-file"
+         },
+         {
+            "index" : "3",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-html"
+         },
+         {
+            "index" : "4",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "sixapart-oembed"
+         },
+         {
+            "index" : "5",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-horizontalrule"
+         },
+         {
+            "index" : "6",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-table"
+         },
+         {
+            "index" : "7",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-header_shoulder"
+         },
+         {
+            "index" : "8",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-link_button"
+         },
+         {
+            "index" : "9",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-2_column_content"
+         },
+         {
+            "index" : "10",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-3_column_content"
+         },
+         {
+            "index" : "11",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-columns"
+         },
+         {
+            "index" : "12",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgimage_content"
+         },
+         {
+            "index" : "13",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgcolor_content"
+         },
+         {
+            "index" : "14",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-module_select"
+         },
+         {
+            "index" : "15",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_large"
+         },
+         {
+            "index" : "16",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_medium"
+         },
+         {
+            "index" : "17",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-lineimage"
+         },
+         {
+            "index" : "18",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-content_in_column"
+         }
+      ]
+   },
+   "can_remove_block" : true,
+   "class_name" : "content",
+   "html" : "",
+   "icon" : "",
+   "identifier" : "content",
+   "label" : "コンテンツ",
+   "preview_header" : "",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}

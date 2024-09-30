@@ -1,0 +1,124 @@
+{
+   "block_display_options" : {
+      "common" : [
+         {
+            "index" : "0",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-text"
+         },
+         {
+            "index" : "1",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "mt-image"
+         },
+         {
+            "index" : "2",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "mt-file"
+         },
+         {
+            "index" : "3",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-html"
+         },
+         {
+            "index" : "4",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "sixapart-oembed"
+         },
+         {
+            "index" : "5",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-horizontalrule"
+         },
+         {
+            "index" : "6",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-table"
+         },
+         {
+            "index" : "7",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-columns"
+         },
+         {
+            "index" : "8",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_large"
+         },
+         {
+            "index" : "9",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_medium"
+         },
+         {
+            "index" : "10",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-link_button"
+         },
+         {
+            "index" : "11",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-module_select"
+         },
+         {
+            "index" : "12",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-header_shoulder"
+         },
+         {
+            "index" : "13",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgcolor_content"
+         },
+         {
+            "index" : "14",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgimage_content"
+         },
+         {
+            "index" : "15",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-content"
+         }
+      ]
+   },
+   "can_remove_block" : false,
+   "class_name" : "",
+   "html" : {
+      "context" : {
+         "1" : {
+            "className" : "image",
+            "label" : "背景画像"
+         },
+         "2" : {
+            "alignment" : "",
+            "assetId" : "",
+            "useThumbnail" : false
+         }
+      },
+      "text" : "<!-- mt-beb t=\"mt-image\" m='1,2' --><p class=\"image\"><img src=\"\" alt=\"\" width=\"\" height=\"\" class=\"asset asset-image\" style=\"max-width:100%;height:auto;display:block\"/></p><!-- /mt-beb -->"
+   },
+   "icon" : "data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtNHtmaWxsOm5vbmU7fS5jbHMtMntjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgpO30uY2xzLTN7ZmlsbDojNjY2O30uY2xzLTR7c3Ryb2tlOiM2NjY7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLXdpZHRoOjI0cHg7fTwvc3R5bGU+PGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPjxyZWN0IGNsYXNzPSJjbHMtMSIgeT0iMTQ5LjU2IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjIxMi44NyIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsYXNzPSJjbHMtMiI+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDcxLjM0LDQxOC40OEg0MC42NkE0MC41NSw0MC41NSwwLDAsMSwwLDM3Ny44MVYxMzQuMTlBNDAuNTUsNDAuNTUsMCwwLDEsNDAuNjYsOTMuNTJINDcxLjM0QTQwLjY2LDQwLjY2LDAsMCwxLDUxMiwxMzQuMTlWMzc3LjgxQTQwLjU1LDQwLjU1LDAsMCwxLDQ3MS4zNCw0MTguNDhaTTE2MC44MiwxNDAuOTNhNDcuNDIsNDcuNDIsMCwxLDAsNDcuNDEsNDcuNDJBNDcuNTIsNDcuNTIsMCwwLDAsMTYwLjgyLDE0MC45M1pNMTIwLjE2LDM2NC4zMkgzOTEuODRWMjY5LjVsLTc0LTc0LjA1YTEwLjI4LDEwLjI4LDAsMCwwLTE0LjM4LDBsLTc5LjIsMTE0LjcxLTQ2Ljg3LTQ2Ljg4YTEwLjI5LDEwLjI5LDAsMCwwLTE0LjM5LDBsLTQyLjc5LDYwLjU1WiIvPjwvZz48bGluZSBjbGFzcz0iY2xzLTQiIHkxPSIxNjEuNTYiIHgyPSI1MTIiIHkyPSIxNjEuNTYiLz48bGluZSBjbGFzcz0iY2xzLTQiIHkxPSIzNTAuNDQiIHgyPSI1MTIiIHkyPSIzNTAuNDQiLz48L3N2Zz4=",
+   "identifier" : "lineimage",
+   "label" : "一行背景",
+   "preview_header" : "<script>\r\ndocument.addEventListener(\"DOMContentLoaded\", async () => {\r\n  if (document.body.dataset.hasCompiledHtml) {\r\n    // 処理済み\r\n    return;\r\n  }\r\n\r\n  const imgContainerElm = document.querySelector(\".image\");\r\n  const imgElm = imgContainerElm.querySelector(\"img\");\r\n  imgContainerElm.remove();\r\n\r\n  const img = imgElm ? imgElm.src : \"\";\r\n  const text = document.body.innerHTML;  \r\n\r\n  MTBlockEditorSetCompiledHtml(`\r\n    <div class=\"section-bgimg\" style=\"background-image: url(${img})\">\r\n    </div>\r\n  `);\r\n});\r\n</script>",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}

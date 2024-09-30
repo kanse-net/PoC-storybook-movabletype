@@ -1,0 +1,145 @@
+{
+   "block_display_options" : {
+      "common" : [
+         {
+            "index" : "0",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-text"
+         },
+         {
+            "index" : "1",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "mt-image"
+         },
+         {
+            "index" : "2",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "mt-file"
+         },
+         {
+            "index" : "3",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-html"
+         },
+         {
+            "index" : "4",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "sixapart-oembed"
+         },
+         {
+            "index" : "5",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-horizontalrule"
+         },
+         {
+            "index" : "6",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-table"
+         },
+         {
+            "index" : "7",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "core-columns"
+         },
+         {
+            "index" : "8",
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-link_button"
+         },
+         {
+            "index" : "9",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-header_shoulder"
+         },
+         {
+            "index" : "10",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-content"
+         },
+         {
+            "index" : "11",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgimage_content"
+         },
+         {
+            "index" : "12",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-bgcolor_content"
+         },
+         {
+            "index" : "13",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_medium"
+         },
+         {
+            "index" : "14",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-module_select"
+         },
+         {
+            "index" : "15",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-2_column_content"
+         },
+         {
+            "index" : "16",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-3_column_content"
+         },
+         {
+            "index" : "17",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-lineimage"
+         },
+         {
+            "index" : "18",
+            "panel" : false,
+            "shortcut" : false,
+            "typeId" : "custom-content_in_column"
+         }
+      ]
+   },
+   "can_remove_block" : true,
+   "class_name" : "",
+   "html" : {
+      "context" : {
+         "1" : {
+            "className" : "image",
+            "label" : "背景画像"
+         },
+         "2" : {
+            "alignment" : "",
+            "assetId" : "",
+            "useThumbnail" : false
+         },
+         "3" : {
+            "label" : "タイトル"
+         }
+      },
+      "text" : "<!-- mt-beb t=\"mt-image\" m='1,2' --><p class=\"image\"><img src=\"\" alt=\"\" width=\"\" height=\"\" class=\"asset asset-image\" style=\"max-width:100%;height:auto;display:block\"/></p><!-- /mt-beb --><!-- mt-beb m='3' --><h1>タイトル</h1><!-- /mt-beb -->"
+   },
+   "icon" : "data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNjY2O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48cmVjdCBjbGFzcz0iY2xzLTEiIHk9IjMyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjQ1MiIgcng9IjYxLjQzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjcyLjI1LDMyMUgyMDcuMTF2LTlxOCwwLDEyLjExLTEuNzZ0NS4yNy01LjA4YTI3LDI3LDAsMCwwLDEuMTctOC43OFYyNTYuNTlIMTY0LjI0djM5Ljc1YzAsNS40NiwxLjE0LDkuNDQsMy40MiwxMS45MXM3LjQ4LDMuNzEsMTUuNjIsMy43MXY5SDExNy42NnYtOXE3LjkxLDAsMTIuMDYtMS43NmMyLjc2LTEuMTcsNC41NS0yLjg0LDUuMzctNWEyNiwyNiwwLDAsMCwxLjIyLTguODNWMjEzLjEzYTI2LjEyLDI2LjEyLDAsMCwwLTEuMTctOC43NCw5LjI3LDkuMjcsMCwwLDAtNS4xOC01cS00LTEuODUtMTIuMy0xLjg1di05aDY1LjYydjlxLTEyLjEsMC0xNS41NywzLjYxdC0zLjQ3LDEydjMyLjYyaDYxLjQyVjIxMy4xM2EyOC4xOCwyOC4xOCwwLDAsMC0xLjA3LTguNzRxLTEuMDgtMy4xNi01LjA4LTV0LTEyLjQtMS44NXYtOWg2NS4xNHY5cS04LjMxLDAtMTIuMzEsMS44NXQtNS4xMyw1YTI3LjM5LDI3LjM5LDAsMCwwLTEuMTIsOC43NHY4My4yMWEyOC40LDI4LjQsMCwwLDAsMSw4LjU0cTEsMy4xOCw1LjEyLDUuMTNUMjcyLjI1LDMxMloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zODAuNSwzMjNIMzE3Ljk0VjMxMy4yaDQuNzdjNC4yNywwLDcuMzMtLjQ5LDkuMi0xLjQ4YTYuMzQsNi4zNCwwLDAsMCwzLjQ1LTQuMTZBMzkuNzYsMzkuNzYsMCwwLDAsMzM2LDI5OVYyMjBhMjcuMDYsMjcuMDYsMCwwLDAtMS4wNy04Ljg0LDYuNjQsNi42NCwwLDAsMC00LjQ3LTRxLTMuNDEtMS4xMS0xMC45MS0xLjExSDMxNlYxOTYuN3ExNy4yNi0yLjMyLDI0LjI4LTQuMzZhNDMsNDMsMCwwLDAsMTIuNzktNi4xaDkuNTVWMzAwLjVxMCw3LjExLDIuNDQsOS45dDkuNjQsMi44aDUuNzlaIi8+PC9zdmc+",
+   "identifier" : "titlearea_large",
+   "label" : "タイトルエリア大（背景画像 + 見出し）",
+   "preview_header" : "<script>\r\ndocument.addEventListener(\"DOMContentLoaded\", async () => {\r\n  if (document.body.dataset.hasCompiledHtml) {\r\n    // 処理済み\r\n    return;\r\n  }\r\n\r\n  const imgContainerElm = document.querySelector(\".image\");\r\n  const imgElm = imgContainerElm.querySelector(\"img\");\r\n  imgContainerElm.remove();\r\n\r\n  const img = imgElm ? imgElm.src : \"\";\r\n  const text = document.body.innerHTML;  \r\n\r\n  MTBlockEditorSetCompiledHtml(`\r\n    <div class=\"big-area\" style=\"background-image: url(${img})\">\r\n      <div class=\"inner-wrap\">\r\n          ${text}\r\n      </div>\r\n    </div>\r\n  `);\r\n});\r\n</script>",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}

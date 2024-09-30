@@ -1,0 +1,152 @@
+{
+   "block_display_options" : {
+      "common" : [
+         {
+            "index" : 0,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-text"
+         },
+         {
+            "index" : 1,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "mt-image"
+         },
+         {
+            "index" : 2,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "mt-file"
+         },
+         {
+            "index" : 3,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-html"
+         },
+         {
+            "index" : 4,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "sixapart-oembed"
+         },
+         {
+            "index" : 5,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-horizontalrule"
+         },
+         {
+            "index" : 6,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-table"
+         },
+         {
+            "index" : 7,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "core-columns"
+         },
+         {
+            "index" : 8,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_medium"
+         },
+         {
+            "index" : 9,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-bgcolor_content"
+         },
+         {
+            "index" : 10,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-module_select"
+         },
+         {
+            "index" : 11,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-2_column_content"
+         },
+         {
+            "index" : 12,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-3_column_content"
+         },
+         {
+            "index" : 13,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-header_shoulder"
+         },
+         {
+            "index" : 14,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-content"
+         },
+         {
+            "index" : 15,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-lineimage"
+         },
+         {
+            "index" : 16,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-link_button"
+         },
+         {
+            "index" : 17,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-titlearea_large"
+         },
+         {
+            "index" : 18,
+            "panel" : true,
+            "shortcut" : false,
+            "typeId" : "custom-content_in_column"
+         }
+      ]
+   },
+   "can_remove_block" : false,
+   "class_name" : "",
+   "html" : {
+      "context" : {
+         "1" : {
+            "className" : "image",
+            "label" : "背景画像"
+         },
+         "2" : {
+            "alignment" : "",
+            "assetId" : "",
+            "useThumbnail" : false
+         },
+         "3" : {
+            "blockElement" : "p",
+            "className" : "text-color",
+            "helpText" : "コンテンツの文字色が変更されます。背景画像に合わせて読みやすい文字色にするのがオススメです。",
+            "label" : "コンテンツ内の文字色",
+            "options" : "標準色\n白（#ffffff）"
+         },
+         "4" : {
+            "text" : "標準色"
+         }
+      },
+      "text" : "<!-- mt-beb t=\"mt-image\" m='1,2' --><p class=\"image\"><img src=\"\" alt=\"\" width=\"\" height=\"\" class=\"asset asset-image\" style=\"max-width:100%;height:auto;display:block\"/></p><!-- /mt-beb --><!-- mt-beb t=\"sixapart-select\" m='3,4' --><p class=\"text-color\">標準色</p><!-- /mt-beb --><!-- mt-beb t=\"custom-content\" --><!-- /mt-beb -->"
+   },
+   "icon" : "data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNjY2O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48cmVjdCBjbGFzcz0iY2xzLTEiIHk9IjMwIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjQ1MiIgcng9IjYxLjQzIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTI5LjkxLDIxMi44MmExMiwxMiwwLDAsMSwzLjY3LTlxMy42Ny0zLjU2LDEwLTMuNTV0MTAsMy41NWExMi45NCwxMi45NCwwLDAsMSwwLDE4LjE4LDE1LjYyLDE1LjYyLDAsMCwxLTE5LjgzLDBBMTIsMTIsMCwwLDEsMTI5LjkxLDIxMi44MlptMjUuOSwxMTUuMDhIMTMxLjM1VjIzNi41NGgyNC40NloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xOTguNzksMjM2LjU0bC43NiwxMC4yOXE5LjctMTEuOSwyNi4yNC0xMS44OSwxNy42NCwwLDI0LjIyLDEzLjkxLDkuNjItMTMuOSwyNy40Mi0xMy45MSwxNC44NSwwLDIyLjExLDguNjR0Ny4yNSwyNlYzMjcuOUgyODIuMzJWMjY5LjU4cTAtNy43OS0zLTExLjM3dC0xMC43Mi0zLjU5cS0xMSwwLTE1LjE5LDEwLjQ4bC4wOSw2Mi44SDIyOS4wOFYyNjkuNjZxMC03Ljk0LTMuMTItMTEuNDl0LTEwLjYzLTMuNTVxLTEwLjM4LDAtMTUsOC42MlYzMjcuOUgxNzUuOTJWMjM2LjU0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMxNS41NCwyODEuNjJxMC0yMSwxMC0zMy44NXQyNy0xMi44M3ExNSwwLDIzLjM3LDEwLjIybDEtOC42MkgzOTl2ODguMzRxMCwxMi01LjQ0LDIwLjg2YTM0LjkzLDM0LjkzLDAsMCwxLTE1LjMxLDEzLjUxcS05Ljg5LDQuNjUtMjMuMTIsNC42NWE1MC4xMSw1MC4xMSwwLDAsMS0xOS41OC00cS05LjUyLTQtMTQuNDMtMTAuMzNsMTAuOC0xNC44NFEzNDEsMzQ0Ljg2LDM1NCwzNDQuODZxOS43MSwwLDE1LjEtNS4xOHQ1LjQtMTQuNjl2LTQuODhxLTguNDMsOS41NC0yMi4xOSw5LjU1YTMyLjMxLDMyLjMxLDAsMCwxLTI2LjYyLTEyLjg3cS0xMC4xNy0xMi44OS0xMC4xNi0zNC4xNlptMjQuMzgsMS43NHEwLDEyLjQ3LDUsMTkuNTRBMTUuODIsMTUuODIsMCwwLDAsMzU4LjU3LDMxMHExMS4xMywwLDE1Ljk0LTguNFYyNjNxLTQuODktOC4zOC0xNS43Ny04LjM5YTE1LjkyLDE1LjkyLDAsMCwwLTEzLjgsNy4yMVEzMzkuOTIsMjY5LDMzOS45MiwyODMuMzZaIi8+PC9zdmc+",
+   "identifier" : "bgimage_content",
+   "label" : "背景画像 + コンテンツ",
+   "preview_header" : "<script>\r\ndocument.addEventListener(\"DOMContentLoaded\", async () => {\r\n  if (document.body.dataset.hasCompiledHtml) {\r\n    // 処理済み\r\n    return;\r\n  }\r\n\r\n  const imgContainerElm = document.querySelector(\".image\");\r\n  const imgElm = imgContainerElm.querySelector(\"img\");\r\n  const img = imgElm ? imgElm.src : \"\";\r\n  const textColorElm = document.querySelector(\".text-color\");\r\n  const m = textColorElm.textContent.match(/.*#([0-9a-fA-F]{1,2})([0-9a-fA-F]{1,2})([0-9a-fA-F]{1,2})/);\r\n  const textColorCss = m ? `color: #${m[1]}${m[2]}${m[3]}; ` : \"\";\r\n\r\n  imgContainerElm.remove();\r\n  textColorElm.remove();\r\n\r\n  const text = document.body.innerHTML.replace(/<!--\\s+\\/?mt-beb.*?-->/g, \"\");\r\n\r\n  MTBlockEditorSetCompiledHtml(`\r\n    <section class=\"bg-img\" style=\"${textColorCss}background-image: url(&quot;${img}&quot;)\">\r\n      <div class=\"inner-wrap\">\r\n          ${text}\r\n      </div>\r\n    </section>\r\n  `);\r\n});\r\n</script>",
+   "show_preview" : true,
+   "wrap_root_block" : false
+}
