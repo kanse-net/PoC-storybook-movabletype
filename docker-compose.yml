@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: PoC-storybook-movabletype
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - "6006:6006"
+    stdin_open: true
+    tty: true
