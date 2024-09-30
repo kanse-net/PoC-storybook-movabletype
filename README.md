@@ -39,3 +39,15 @@ https://docs.docker.jp/compose/reference/up.html
 ```bash
 docker-compose stop
 ```
+
+## メモ
+
+### npm install vite
+
+### npx storybook@latest init --type html
+
+### npm run storybook
+
+> ブラウザを開こうとしたので
+> --no-open
+> https://storybook.js.org/docs/api/cli-options
