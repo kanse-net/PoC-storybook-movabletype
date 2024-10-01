@@ -8,13 +8,13 @@
         <mt:ChildSiteFooterLogoAsset><mt:AssetURL setvar="footerlogo"></mt:ChildSiteFooterLogoAsset>
       </mt:If></mt:IfBlog>
       <mt:If name="footerlogo">
-          <a href="<$mt:SiteURL$>" class="footer__title"><img src="<mt:var name="footerlogo">" alt="<$mt:SiteName$>" class="footer__title__img"></a>
+          <a href="<mt:SiteURL>" class="footer__title"><img src="<mt:var name="footerlogo">" alt="<mt:SiteName>" class="footer__title__img"></a>
       <mt:Else>
-          <p class="footer__title__text"><a href="<$mt:SiteURL$>" class="footer__title"><$mt:SiteName$></a></p>
+          <p class="footer__title__text"><a href="<mt:SiteURL>" class="footer__title"><mt:SiteName></a></p>
       </mt:If>
       <div>
       <ul class="footer__navi">
-          <li><a href="<$mt:SiteRelativeURL$>news.html">ニュース</a></li>
+          <li><a href="<mt:SiteRelativeURL>news.html">ニュース</a></li>
           <mt:Contents content_type="ウェブページ" limit="999">
           <mt:ContentField content_field="ナビの表示位置"><mt:If tag="ContentFieldValue" eq="hf">
           <mt:ContentField content_field="ページタイトル"><li><a href="<mt:ContentPermalink>"><mt:ContentFieldValue></a></li></mt:ContentField>
