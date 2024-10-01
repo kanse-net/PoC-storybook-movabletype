@@ -2,23 +2,23 @@
   <div class="inner-wrap">
     <h1 class="header__titleWrap">
       <mt:IfWebsite><mt:If tag="HeaderLogo">
-        <mt:HeaderLogoAsset><mt:AssetURL setvar="headerlogo"></mt:HeaderLogoAsset>
+        <mt:HeaderLogoAsset><mt:AssetURL setvar="headerlogo"/></mt:HeaderLogoAsset>
       </mt:If></mt:IfWebsite>
       <mt:IfBlog><mt:If tag="ChildSiteHeaderLogo">
-        <mt:ChildSiteHeaderLogoAsset><mt:AssetURL setvar="headerlogo"></mt:ChildSiteHeaderLogoAsset>
+        <mt:ChildSiteHeaderLogoAsset><mt:AssetURL setvar="headerlogo"/></mt:ChildSiteHeaderLogoAsset>
       </mt:If></mt:IfBlog>
       <mt:If name="headerlogo">
-        <a href="<$mt:SiteURL$>" class="header__title"><img src="<mt:var name="headerlogo">" alt="<$mt:SiteName$>"></a>
-      <mt:Else>
-        <span class="header__title__text"><a href="<$mt:SiteURL$>" class="header__title"><$mt:SiteName$></a></span>
+        <a href="<mt:SiteURL/>" class="header__title"><img src="<mt:var name="headerlogo"/>" alt="<mt:SiteName/>"></a>
+      <mt:Else/>
+        <span class="header__title__text"><a href="<mt:SiteURL/>" class="header__title"><mt:SiteName/></a></span>
       </mt:If>
     </h1>
     <nav>
       <ul class="header__navi">
-        <li><a href="<$mt:SiteRelativeURL$>news.html">ニュース</a></li>
+        <li><a href="<mt:SiteRelativeURL/>news.html">ニュース</a></li>
       <mt:Contents content_type="ウェブページ" limit="999">
       <mt:ContentField content_field="ナビの表示位置"><mt:If tag="ContentFieldValue" eq="hf">
-      <mt:ContentField content_field="ページタイトル"><li><a href="<mt:ContentPermalink>"><mt:ContentFieldValue></a></li></mt:ContentField>
+      <mt:ContentField content_field="ページタイトル"><li><a href="<mt:ContentPermalink/>"><mt:ContentFieldValue/></a></li></mt:ContentField>
       </mt:If></mt:ContentField>
       </mt:Contents>
     </ul>
@@ -31,9 +31,9 @@
     <div class="inner-wrap">
   <h1>
       <mt:If name="headerlogo">
-          <a href="<$mt:SiteURL$>" class="header__title-sp"><img src="<mt:var name="headerlogo">" alt="<$mt:SiteName$>"></a>
-      <mt:Else>
-          <span class="header__title__text"><a href="<$mt:SiteURL$>" class="header__title-sp"><$mt:SiteName$></a></span>
+          <a href="<mt:SiteURL/>" class="header__title-sp"><img src="<mt:var name="headerlogo"/>" alt="<mt:SiteName/>"></a>
+      <mt:Else/>
+          <span class="header__title__text"><a href="<mt:SiteURL/>" class="header__title-sp"><mt:SiteName/></a></span>
       </mt:If>
   </h1>
   <a class="menu">
@@ -44,10 +44,10 @@
   <nav class="gnav">
     <div class="gnav__wrap">
       <ul class="header__navi">
-        <li><a href="<$mt:SiteRelativeURL$>news.html">ニュース</a></li>
+        <li><a href="<mt:SiteRelativeURL/>news.html">ニュース</a></li>
       <mt:Contents content_type="ウェブページ" limit="999">
       <mt:ContentField content_field="ナビの表示位置"><mt:If tag="ContentFieldValue" eq="hf">
-      <mt:ContentField content_field="ページタイトル"><li><a href="<mt:ContentPermalink>"><mt:ContentFieldValue></a></li></mt:ContentField>
+      <mt:ContentField content_field="ページタイトル"><li><a href="<mt:ContentPermalink/>"><mt:ContentFieldValue/></a></li></mt:ContentField>
       </mt:If></mt:ContentField>
       </mt:Contents>
 
