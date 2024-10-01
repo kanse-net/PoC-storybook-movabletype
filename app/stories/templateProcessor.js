@@ -1,3 +1,4 @@
+const mtTagRegex = /<mt:.*?>|<\/mt:.*?>|<mt:.*?\/>/g;
 const blockTags = [
   "AuthorHasContent",
   "Actions",
@@ -390,17 +391,23 @@ const functionTags = [
   "Var",
 ];
 
-const mtTagRegex = /<mt:.*?>|<\/mt:.*?>|<mt:.*?\/>/g;
-
 function wrapBlockTags(template) {
   blockTags.forEach((tag) => {
     const regex = new RegExp(
       `<mt:${tag}.*?>|<\/mt:${tag}>|<mt:${tag}.*?\/>`,
-      "g"
+      "gi"
     );
     template = template.replace(regex, (match) => {
-      return `<div style="background-color:skyblue">${match}</div>`;
+      return `<span style='background-color:skyblue'>${match}</span>`;
     });
+  });
+  return template;
+}
+
+function wrapAnotherTags(template) {
+  const regex = new RegExp(`<mt:.*Asset>|<\/mt:.*Asset>`, "gi");
+  template = template.replace(regex, (match) => {
+    return `<span style='background-color:red'>${match}</span>`;
   });
   return template;
 }
@@ -409,10 +416,10 @@ function wrapFunctionTags(template) {
   functionTags.forEach((tag) => {
     const regex = new RegExp(
       `<mt:${tag}.*?>|<\/mt:${tag}>|<mt:${tag}.*?\/>`,
-      "g"
+      "gi"
     );
     template = template.replace(regex, (match) => {
-      return `<div style="background-color:seagreen">${match}</div>`;
+      return `<span style='background-color:seagreen'>${match}</span>`;
     });
   });
   return template;
@@ -421,6 +428,7 @@ function wrapFunctionTags(template) {
 export function processTemplate(template) {
   let modifiedTemplate = template;
   modifiedTemplate = wrapBlockTags(modifiedTemplate);
+  modifiedTemplate = wrapAnotherTags(modifiedTemplate);
   modifiedTemplate = wrapFunctionTags(modifiedTemplate);
   modifiedTemplate = modifiedTemplate.replace(mtTagRegex, (match) => {
     return match.replace(/</g, "&lt;").replace(/>/g, "&gt;");
